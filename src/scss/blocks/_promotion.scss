@@ -1,0 +1,84 @@
+.promotion {
+	position: relative;
+	display: grid;
+	gap: 24px;
+	background-color: hsla(40, 100%, 50%, 0.401);
+
+
+	&::before {
+		content: "";
+		display: block;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #999;
+		background-image: url(./../img/promotion/Paste.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@include mediaBg {
+			background-image: url(./../img/promotion/Paste@2x.jpg);
+		}
+
+	}
+}
+
+.promotion__container {
+	padding-left: calc(
+		(100% - var(--container-width)) /2 + (var(--container-width) /2)
+		);
+	padding-right: calc((100% - var(--container-width)) /2);
+}
+
+.promotion__content {
+	padding: 100px 0;
+	padding-left: 72px;
+	display: grid;
+	gap: 24px;
+}
+
+
+
+.promotion__desc {
+	display: grid;
+	gap: 16px;
+}
+
+.promotion__tagline {
+	color: #377DFF;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.promotion__title {
+	color: #121212;
+	font-family: var(--font-accent);
+	font-weight: 500;
+	font-size: 40px;
+	letter-spacing: -.4px;
+	line-height: 1.1;
+}
+
+.promotion__text {
+	color: #121212;
+	font-size: 20px;
+	line-height: 1.6;
+
+}
+
+.promotion__timer {
+	display: grid;
+	gap: 12px;
+	color: #121212;
+}
+
+.promotion__expires {
+	font-size: 16px;
+	line-height: 1.625;
+}
+
+

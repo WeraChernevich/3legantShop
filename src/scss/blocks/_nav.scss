@@ -1,0 +1,50 @@
+.nav {
+	padding: 16px 0;
+	background-color: #FFC95C;
+}
+
+.nav__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+}
+
+.nav__link {
+	color: #141718;
+	display: flex;
+	gap: 2px;
+	align-items: center;
+}
+
+.nav__btns {
+	display: flex;
+	gap: 17px;
+	align-items: center;
+
+}
+
+.nav__bth {
+	display: flex;
+	align-items: center;
+}
+
+.nav__btn-count {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #141718;
+	color: var(--yellow);
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+}
+
